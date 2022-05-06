@@ -1,0 +1,18 @@
+<html>
+    <%- include('../partials/head.ejs') %> 
+
+   <h1>LIVE MATCHES</h1>
+
+<h2>
+    <% if(typeof data == 'object' && data.length > 0){ %>
+        <br><br><br>
+       <center>There are no matches at the moment. Please check back later.</center> 
+    <% } %>
+</h2>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
+
+

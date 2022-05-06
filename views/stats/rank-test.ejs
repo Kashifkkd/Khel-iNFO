@@ -1,0 +1,61 @@
+<html>
+    <%- include('../partials/head.ejs') %> 
+
+   <h1>TOP PLAYERS</h1>
+
+   <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 0.7fr;
+            /* background-color: #2196F3; */
+            padding: 10px;
+            margin-left: 307px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid purple;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        h1{
+            text-align: center;
+            color: #e44652;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    
+    <h2>TEST</h2>
+
+    <div class="grid-container">
+        <div class="grid-item"><%= TestRankings[0][0] %> (<%= TestRankings[0][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[1][0] %> (<%= TestRankings[1][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[2][0] %> (<%= TestRankings[2][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[3][0] %> (<%= TestRankings[3][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[4][0] %> (<%= TestRankings[4][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[5][0] %> (<%= TestRankings[5][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[6][0] %> (<%= TestRankings[6][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[7][0] %> (<%= TestRankings[7][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[8][0] %> (<%= TestRankings[8][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[9][0] %> (<%= TestRankings[9][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[10][0] %> (<%= TestRankings[10][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[11][0] %> (<%= TestRankings[11][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[12][0] %> (<%= TestRankings[12][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[13][0] %> (<%= TestRankings[13][2] %>)</div>
+        <div class="grid-item"><%= TestRankings[14][0] %> (<%= TestRankings[14][2] %>)</div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
+
+

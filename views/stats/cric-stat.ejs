@@ -1,0 +1,61 @@
+<html>
+    <%- include('../partials/head.ejs') %> 
+
+   <h1>TOP PLAYERS</h1>
+
+   <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 0.7fr;
+            /* background-color: #2196F3; */
+            padding: 10px;
+            margin-left: 307px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid purple;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        h1{
+            text-align: center;
+            color: #e44652;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+
+    <h2>ODI </h2>
+
+    <div class="grid-container">
+        <div class="grid-item"><%= OdiRankings[0][0] %> (<%= OdiRankings[0][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[1][0] %> (<%= OdiRankings[1][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[2][0] %> (<%= OdiRankings[2][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[3][0] %> (<%= OdiRankings[3][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[4][0] %> (<%= OdiRankings[4][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[5][0] %> (<%= OdiRankings[5][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[6][0] %> (<%= OdiRankings[6][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[7][0] %> (<%= OdiRankings[7][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[8][0] %> (<%= OdiRankings[8][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[9][0] %> (<%= OdiRankings[9][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[10][0] %> (<%= OdiRankings[10][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[11][0] %> (<%= OdiRankings[11][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[12][0] %> (<%= OdiRankings[12][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[13][0] %> (<%= OdiRankings[13][2] %>)</div>
+        <div class="grid-item"><%= OdiRankings[14][0] %> (<%= OdiRankings[14][2] %>)</div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
+
+

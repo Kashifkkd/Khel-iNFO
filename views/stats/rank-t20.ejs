@@ -1,0 +1,61 @@
+<html>
+    <%- include('../partials/head.ejs') %> 
+
+   <h1>TOP PLAYERS</h1>
+
+   <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 0.7fr;
+            /* background-color: #2196F3; */
+            padding: 10px;
+            margin-left: 307px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid purple;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        h1{
+            text-align: center;
+            color: #e44652;
+        }
+
+        h2{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+
+    <h2>T20</h2>
+
+    <div class="grid-container">
+        <div class="grid-item"><%= T20Rankings[0][0] %> (<%= T20Rankings[0][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[1][0] %> (<%= T20Rankings[1][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[2][0] %> (<%= T20Rankings[2][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[3][0] %> (<%= T20Rankings[3][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[4][0] %> (<%= T20Rankings[4][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[5][0] %> (<%= T20Rankings[5][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[6][0] %> (<%= T20Rankings[6][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[7][0] %> (<%= T20Rankings[7][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[8][0] %> (<%= T20Rankings[8][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[9][0] %> (<%= T20Rankings[9][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[10][0] %> (<%= T20Rankings[10][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[11][0] %> (<%= T20Rankings[11][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[12][0] %> (<%= T20Rankings[12][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[13][0] %> (<%= T20Rankings[13][2] %>)</div>
+        <div class="grid-item"><%= T20Rankings[14][0] %> (<%= T20Rankings[14][2] %>)</div>
+    </div>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
+
+

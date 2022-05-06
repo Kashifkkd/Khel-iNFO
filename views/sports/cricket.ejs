@@ -1,0 +1,192 @@
+<html>
+    <%- include('../partials/head.ejs') %>
+<body>
+
+    <style> 
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            min-height: 100vh;
+        }
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+
+        h2,
+        h3,
+        a {
+            color: #34495e;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        .logo {
+            margin: 0;
+            font-size: 1.45em;
+        }
+
+        .main-nav {
+            margin-top: 5px;
+
+        }
+        .logo a,
+        .main-nav a {
+            padding: 10px 15px;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+        }
+
+        .main-nav a {
+            color: #34495e;
+            font-size: .99em;
+        }
+
+        .main-nav a:hover {
+            color: #718daa;
+        }
+
+        .header {
+            padding-top: .5em;
+            padding-bottom: .5em;
+            border: 1px solid #a2a2a2;
+            background-color: #f4f4f4;
+            -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        /* Media Queries */
+
+        @media (min-width: 769px) {
+            .header,
+            .main-nav {
+                display: flex;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            .header{
+                width: 80%;
+                margin: 0 auto;
+                max-width: 1150px;
+                }
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        p {
+            padding: 20px;
+            font-size: 1.1em;
+        }
+
+        <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: #333; */
+    }
+
+    li {
+        float: right;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: blue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(190, 190, 190);
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    </style>
+
+    <header class="header">
+        <h1 class="logo"><a href="/categories/cricket">Cricket</a></h1>
+    <ul class="main-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/categories/cricket/live-matches">Live Matches</a></li>
+        <!-- <li><a href="/categories/cricket/cric_stat">Top Players</a></li>   -->
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Top Players</a>
+            <div class="dropdown-content">
+                <a href="/categories/cricket/rank-test">TEST</a>
+                <a href="/categories/cricket/rank-odi">ODI</a>
+                <a href="/categories/cricket/rank-t20">T20</a>
+            </div>
+        </li>
+
+    </ul>
+    </header> 
+
+    <p>
+        Cricket is a bat-and-ball game played between two teams of eleven players each on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end, each comprising two bails balanced on three stumps. The game proceeds when a player on the fielding team, called the bowler, "bowls" (propels) the ball from one end of the pitch towards the wicket at the other end, with an "over" being completed once they have legally done so six times. The batting side has one player at each end of the pitch, with the player at the opposite end of the pitch from the bowler aiming to strike the ball with a bat. The batting side scores runs either when the ball reaches the boundary of the field, or when the two batters swap ends of the pitch, which results in one run. The fielding side's aim is to prevent run-scoring and dismiss each batter (so they are "out", and are said to have "lost their wicket"). Means of dismissal include being bowled, when the bowled ball hits the stumps and dislodges the bails, and by the fielding side either catching a hit ball before it touches the ground, or hitting a wicket with the ball before a batter can cross the crease line in front of the wicket to complete a run. When ten batters have been dismissed, the innings ends and the teams swap roles. The game is adjudicated by two umpires, aided by a third umpire and match referee in international matches.
+        <br><br>Forms of cricket range from Twenty20, with each team batting for a single innings of 20 overs and the game generally lasting three hours, to Test matches played over five days. Traditionally cricketers play in all-white kit, but in limited overs cricket they wear club or team colours. In addition to the basic kit, some players wear protective gear to prevent injury caused by the ball, which is a hard, solid spheroid made of compressed leather with a slightly raised sewn seam enclosing a cork core layered with tightly wound string.
+
+        The earliest reference to cricket is in South East England in the mid-16th century. It spread globally with the expansion of the British Empire, with the first international matches in the second half of the 19th century. The game's governing body is the International Cricket Council (ICC), which has over 100 members, twelve of which are full members who play Test matches. The game's rules, the Laws of Cricket, are maintained by Marylebone Cricket Club (MCC) in London. The sport is followed primarily in South Asia, Australasia, the United Kingdom, southern Africa and the West Indies.[1]
+        
+        Women's cricket, which is organised and played separately, has also achieved international standard. The most successful side playing international cricket is Australia, which has won seven One Day International trophies, including five World Cups, more than any other country and has been the top-rated Test side more than any other country.
+    </p>
+
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+</html>
